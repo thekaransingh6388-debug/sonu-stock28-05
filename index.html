@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡 • Stock Market Elite</title>
+    <meta name="description" content="Join TRADE FINDER.IN for NIFTY BANKNIFTY & Stock Options - Daily 3-4 calls, 80-90% accuracy">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '25672578502382248');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=25672578502382248&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0f1a 0%, #0a1a2f 50%, #071221 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 2rem 1.2rem;
+            min-height: 100vh;
+        }
+
+        .card {
+            max-width: 620px;
+            margin: 0 auto;
+            background: rgba(8, 18, 32, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 48px;
+            padding: 2rem 1.8rem 2.5rem;
+            border: 1px solid rgba(0, 100, 255, 0.2);
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(59, 130, 246, 0.1);
+        }
+
+        .logo-area {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .logo-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: 0 15px 25px -8px black, 0 0 0 3px #1e3a8a;
+        }
+        .channel-name {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(120deg, #ffffff, #a0c4ff, #ffffff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-top: 1rem;
+            letter-spacing: -0.3px;
+            word-break: break-word;
+        }
+        .badge {
+            text-align: center;
+            margin-top: 6px;
+        }
+        .badge span {
+            background: rgba(0, 100, 200, 0.25);
+            padding: 5px 14px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #9acdff;
+            display: inline-block;
+        }
+
+        .btn-first {
+            margin: 1.5rem 0 0.8rem;
+        }
+        
+        .tele-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(100deg, #0c2f6e 0%, #0f3d7a 50%, #12488b 100%);
+            border: none;
+            padding: 1rem 1.2rem;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(30, 100, 200, 0.5);
+            cursor: pointer;
+            text-align: center;
+        }
+        .tele-btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(100deg, #144c8a, #1a5cae);
+            box-shadow: 0 15px 28px -5px black;
+        }
+        .tele-btn:active {
+            transform: translateY(2px);
+        }
+        
+        .telegram-icon {
+            font-size: 1.5rem;
+        }
+
+        .stock-card {
+            background: rgba(2, 12, 24, 0.7);
+            border-radius: 32px;
+            padding: 1.5rem 1.5rem;
+            margin: 1.8rem 0;
+            border-left: 4px solid #2b6ef0;
+            border-right: 1px solid #1f3a60;
+        }
+        .stock-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #c7e2ff;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .points-list {
+            list-style: none;
+        }
+        .points-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            color: #e0edff;
+            font-size: 0.95rem;
+        }
+        .points-list li::before {
+            content: "✅";
+            font-size: 1rem;
+        }
+        .disclaimer-tag {
+            background: #0a1a2c;
+            padding: 10px 12px;
+            border-radius: 28px;
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            color: #ffdd99;
+        }
+        .live-stats {
+            background: #07172b;
+            text-align: center;
+            padding: 8px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            margin-top: 12px;
+            color: #88b8ff;
+        }
+        
+        .btn-last {
+            margin: 1rem 0 0.5rem;
+        }
+
+        .subscribe-wrapper {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .subscribe-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(100deg, #8B0000, #b91c1c, #dc2626);
+            border: none;
+            padding: 1rem 1.2rem;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(220, 38, 38, 0.5);
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            font-family: inherit;
+        }
+        .subscribe-btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(100deg, #b91c1c, #dc2626, #ef4444);
+            box-shadow: 0 15px 28px -5px black;
+        }
+        .subscribe-btn:active {
+            transform: translateY(2px);
+        }
+
+        .footer-note {
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 1.8rem;
+            color: #6b8bb0;
+            border-top: 1px solid #1e3452;
+            padding-top: 1.2rem;
+        }
+        
+        @media (max-width: 500px) {
+            .card {
+                padding: 1.5rem 1.2rem;
+            }
+            .channel-name {
+                font-size: 1.5rem;
+            }
+            .tele-btn, .subscribe-btn {
+                font-size: 1rem;
+                padding: 0.85rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo-area">
+        <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/05/wordpress_optimized_image.jpg" alt="TRADE FINDER.IN Logo" onerror="this.src='https://placehold.co/100x100/0B2B5E/white?text=TRI'">
+    </div>
+    
+    <div class="channel-name">𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡</div>
+    <div class="badge"><span>⚡ NIFTY • BANKNIFTY • OPTIONS ⚡</span></div>
+    
+    <!-- BUTTON 1: Telegram Join (Top) -->
+    <div class="btn-first">
+        <a href="https://t.me/+S4g2N_7DVRBmY2M1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_top">
+            <span class="telegram-icon">📲</span> JOIN TELEGRAM CHANNEL
+            <span>🚀</span>
+        </a>
+    </div>
+    
+    <div class="stock-card">
+        <div class="stock-title">
+            <span>📊</span> NIFTY BANKNIFTY & STOCK OPTIONS...
+        </div>
+        <ul class="points-list">
+            <li>✅ Get up to 100-300 Points</li>
+            <li>✅ 80-90% Accuracy</li>
+            <li>✅ 3-4 observational Call daily</li>
+            <li>✅ 3 daily best trade for all</li>
+        </ul>
+        <div class="disclaimer-tag">
+            📢 Disclaimer:- DAILY FREE DEMO CALL ✅
+        </div>
+        <div class="live-stats">
+            🔴 LIVE STOCK ANALYSIS • MARKET UPDATES • FII/DII DATA 🔴
+        </div>
+    </div>
+    
+    <!-- BUTTON 2: Telegram Join (Bottom) -->
+    <div class="btn-last">
+        <a href="https://t.me/+S4g2N_7DVRBmY2M1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_bottom">
+            <span class="telegram-icon">⚡</span> JOIN TELEGRAM NOW
+            <span>💎</span>
+        </a>
+    </div>
+
+    <!-- SUBSCRIBE BUTTON with Meta Pixel tracking -->
+    <div class="subscribe-wrapper">
+        <button id="subscribeButton" class="subscribe-btn" data-track="subscribe_click">
+            🔔 SUBSCRIBE TO UPDATES 🔔
+        </button>
+    </div>
+    
+    <div class="footer-note">
+        🔒 Instant Access • 5000+ Active Members • Daily Free Calls <br>
+        © 𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡 — Stock Market Intelligence
+    </div>
+</div>
+
+<script>
+    (function() {
+        // CORRECT TELEGRAM CHANNEL LINK (used on both join buttons)
+        const TELEGRAM_LINK = "https://t.me/+S4g2N_7DVRBmY2M1";
+        
+        // Ensure all Telegram buttons have the correct link and security attributes
+        const allTeleButtons = document.querySelectorAll('.tele-btn');
+        allTeleButtons.forEach(btn => {
+            if (btn.getAttribute('href') !== TELEGRAM_LINK) {
+                btn.setAttribute('href', TELEGRAM_LINK);
+            }
+            btn.setAttribute('target', '_blank');
+            btn.setAttribute('rel', 'noopener noreferrer');
+        });
+        
+        // Meta Pixel safety wrapper
+        function safeFbq() {
+            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                return fbq;
+            }
+            // fallback that logs
+            return function() { console.log('⚠️ fbq fallback:', arguments); };
+        }
+        
+        // Track Telegram button clicks (Lead + Custom Event)
+        function trackTelegramClick(event) {
+            // Debounce to avoid multiple rapid triggers
+            if (this._tracked) return;
+            this._tracked = true;
+            setTimeout(() => { this._tracked = false; }, 500);
+            
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // Standard Lead event for conversion tracking (Facebook ads optimization)
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'Telegram_Channel_Join_TRADEFINDER',
+                        content_category: 'Telegram_Invite',
+                        content_type: 'telegram_group',
+                        value: 1,
+                        currency: 'INR',
+                        method: 'click'
+                    });
+                    // Custom event for detailed analytics
+                    fbqFunc('trackCustom', 'TelegramJoinClick', {
+                        button_location: this.getAttribute('data-track') || 'telegram_unknown',
+                        channel: 'TRADE_FINDER_IN',
+                        timestamp: new Date().toISOString()
+                    });
+                    console.log('✅ Pixel tracked: Telegram Join from', this.getAttribute('data-track'));
+                }
+            } catch(e) {
+                console.error('Pixel tracking error (Telegram):', e);
+            }
+            // Allow navigation
+            return true;
+        }
+        
+        // Handle Subscribe button: track Facebook Pixel events + show confirmation
+        function handleSubscribeClick(event) {
+            // 1) Track using Meta Pixel (Subscribe standard event + custom)
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // Standard Subscribe event (great for audience building)
+                    fbqFunc('track', 'Subscribe', {
+                        content_name: 'TRADE_FINDER_IN_Updates',
+                        content_category: 'Market_Insights_Subscription',
+                        predicted_ltv: 0.5,
+                        currency: 'INR',
+                        value: 0,
+                        status: 'subscribed'
+                    });
+                    // Custom event for deeper segmentation
+                    fbqFunc('trackCustom', 'SubscribeButtonClick_TRADEFINDER', {
+                        button_id: 'subscribeButton',
+                        location: 'bottom_card',
+                        user_action: 'click_subscribe',
+                        page_name: 'TRADE_FINDER_IN'
+                    });
+                    console.log('✅ Pixel tracked: Subscribe button clicked (Standard Subscribe + Custom)');
+                } else {
+                    console.warn('fbq not available for subscribe tracking');
+                }
+            } catch(e) {
+                console.error('Subscribe tracking error:', e);
+            }
+            
+            // 2) Provide user feedback with stylish alert
+            alert("✅ THANK YOU FOR SUBSCRIBING! ✅\n\nYou're now subscribed to 𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡's premium stock market updates.\n\n📊 Get daily NIFTY/BANKNIFTY calls, 80-90% accuracy, and exclusive trade setups.\n\n🚀 Stay tuned for market-moving insights!");
+            
+            // 3) Visual feedback on button (temporary change to show success)
+            const subBtn = document.getElementById('subscribeButton');
+            if (subBtn) {
+                const originalText = subBtn.innerHTML;
+                const originalBg = subBtn.style.background;
+                subBtn.innerHTML = "✅ SUBSCRIBED! THANK YOU ✅";
+                subBtn.style.background = "linear-gradient(100deg, #166534, #15803d, #16a34a)";
+                subBtn.disabled = true;
+                setTimeout(() => {
+                    subBtn.innerHTML = originalText;
+                    subBtn.style.background = originalBg;
+                    subBtn.disabled = false;
+                }, 3000);
+            }
+        }
+        
+        // Attach event listeners to both Telegram buttons
+        const telegramBtns = document.querySelectorAll('.tele-btn');
+        telegramBtns.forEach(btn => {
+            btn.removeEventListener('click', trackTelegramClick);
+            btn.addEventListener('click', trackTelegramClick);
+        });
+        
+        // Attach Subscribe button handler
+        const subscribeBtn = document.getElementById('subscribeButton');
+        if (subscribeBtn) {
+            subscribeBtn.removeEventListener('click', handleSubscribeClick);
+            subscribeBtn.addEventListener('click', handleSubscribeClick);
+        }
+        
+        // Additional tracking: Enhanced PageView + custom landing event
+        window.addEventListener('load', function() {
+            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                fbq('track', 'PageView');
+                // Custom event for landing page engagement
+                fbq('trackCustom', 'TRADEFINDER_LandingPageView', {
+                    trader_name: 'TRADE_FINDER_IN',
+                    offer_type: 'NIFTY_BANKNIFTY_OPTIONS',
+                    accuracy: '80-90%',
+                    daily_calls: '3-4'
+                });
+                console.log('✅ PageView & custom landing event tracked for TRADE FINDER.IN');
+            }
+            
+            // Double-check all Telegram links are correct
+            const checkTeleLinks = document.querySelectorAll('.tele-btn');
+            checkTeleLinks.forEach(link => {
+                if (link.getAttribute('href') !== TELEGRAM_LINK) {
+                    console.warn('Fixing telegram link again');
+                    link.setAttribute('href', TELEGRAM_LINK);
+                }
+            });
+            console.log('✅ Final verification complete | Telegram link:', TELEGRAM_LINK);
+            console.log('✅ Meta Pixel ID: 25672578502382248 | Ready for tracking');
+        });
+        
+        console.log('🚀 𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡 — 2 Telegram buttons + 1 Subscribe button | Pixel active');
+    })();
+</script>
+
+<!-- Fallback: Ensure fbq never undefined and extra security -->
+<script>
+    (function() {
+        if (typeof fbq === 'undefined') {
+            window.fbq = function() {
+                console.warn('Meta Pixel fallback (fbq missing) called with:', arguments);
+            };
+            console.warn('fbq was undefined, fallback installed');
+        }
+        
+        // Ensure all Telegram links have proper security attributes
+        const allTelegramAnchors = document.querySelectorAll('a[href*="t.me"]');
+        allTelegramAnchors.forEach(anchor => {
+            anchor.setAttribute('rel', 'noopener noreferrer');
+            anchor.setAttribute('target', '_blank');
+        });
+        
+        // Log elements with data-track attributes for debugging
+        const trackedElements = document.querySelectorAll('[data-track]');
+        console.log(`📊 Found ${trackedElements.length} elements with data-track attributes for analytics.`);
+    })();
+</script>
+
+</body>
+</html>
