@@ -6,22 +6,42 @@
     <title>𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡 • Stock Market Elite</title>
     <meta name="description" content="Join TRADE FINDER.IN for NIFTY BANKNIFTY & Stock Options - Daily 3-4 calls, 80-90% accuracy">
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code - Enhanced with correct Pixel ID and advanced event setup -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '25672578502382248');
-    fbq('track', 'PageView');
+        // Pixel Initialization with advanced configuration
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        // Initialize with your Pixel ID
+        fbq('init', '2003503590273511');
+        
+        // Track initial PageView with enhanced parameters
+        fbq('track', 'PageView', {
+            content_name: 'TRADE_FINDER_Landing',
+            content_category: 'Stock_Market_Elite',
+            trader_brand: 'TRADE_FINDER_IN'
+        });
+        
+        // Auto-track ViewContent for better audience optimization
+        fbq('track', 'ViewContent', {
+            content_name: 'TradeFinder_Stock_Market_Channel',
+            content_type: 'telegram_landing_page',
+            content_category: 'NIFTY_BANKNIFTY_OPTIONS',
+            value: 1,
+            currency: 'INR',
+            predicted_accuracy: '80-90%'
+        });
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=25672578502382248&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=2003503590273511&ev=PageView&noscript=1"/>
+    </noscript>
     <!-- End Meta Pixel Code -->
     
     <style>
@@ -47,6 +67,7 @@
             padding: 2rem 1.8rem 2.5rem;
             border: 1px solid rgba(0, 100, 255, 0.2);
             box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(59, 130, 246, 0.1);
+            transition: transform 0.2s ease;
         }
 
         .logo-area {
@@ -210,6 +231,11 @@
         .subscribe-btn:active {
             transform: translateY(2px);
         }
+        .subscribe-btn:disabled {
+            opacity: 0.7;
+            transform: none;
+            cursor: default;
+        }
 
         .footer-note {
             font-size: 0.7rem;
@@ -232,6 +258,18 @@
                 padding: 0.85rem 1rem;
             }
         }
+
+        /* Loading & animation */
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        .tracking-status {
+            text-align: center;
+            font-size: 0.65rem;
+            margin-top: 12px;
+            color: #4c9aff;
+        }
     </style>
 </head>
 <body>
@@ -244,9 +282,9 @@
     <div class="channel-name">𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡</div>
     <div class="badge"><span>⚡ NIFTY • BANKNIFTY • OPTIONS ⚡</span></div>
     
-    <!-- BUTTON 1: Telegram Join (Top) -->
+    <!-- BUTTON 1: Telegram Join (Top) with Enhanced Tracking -->
     <div class="btn-first">
-        <a href="https://t.me/+S4g2N_7DVRBmY2M1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_top">
+        <a href="https://t.me/+S4g2N_7DVRBmY2M1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_top" data-position="top">
             <span class="telegram-icon">📲</span> JOIN TELEGRAM CHANNEL
             <span>🚀</span>
         </a>
@@ -270,17 +308,17 @@
         </div>
     </div>
     
-    <!-- BUTTON 2: Telegram Join (Bottom) -->
+    <!-- BUTTON 2: Telegram Join (Bottom) with Enhanced Tracking -->
     <div class="btn-last">
-        <a href="https://t.me/+S4g2N_7DVRBmY2M1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_bottom">
+        <a href="https://t.me/+S4g2N_7DVRBmY2M1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_bottom" data-position="bottom">
             <span class="telegram-icon">⚡</span> JOIN TELEGRAM NOW
             <span>💎</span>
         </a>
     </div>
 
-    <!-- SUBSCRIBE BUTTON with Meta Pixel tracking -->
+    <!-- SUBSCRIBE BUTTON with Advanced Meta Pixel Tracking (Subscribe Event + Lead) -->
     <div class="subscribe-wrapper">
-        <button id="subscribeButton" class="subscribe-btn" data-track="subscribe_click">
+        <button id="subscribeButton" class="subscribe-btn" data-track="subscribe_click" data-subscribe-source="main_card">
             🔔 SUBSCRIBE TO UPDATES 🔔
         </button>
     </div>
@@ -289,181 +327,306 @@
         🔒 Instant Access • 5000+ Active Members • Daily Free Calls <br>
         © 𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡 — Stock Market Intelligence
     </div>
+    <div class="tracking-status" id="trackingStatus">🔵 Analytics Active • Meta Pixel Ready</div>
 </div>
 
 <script>
     (function() {
-        // CORRECT TELEGRAM CHANNEL LINK (used on both join buttons)
+        // CORRECT TELEGRAM CHANNEL LINK
         const TELEGRAM_LINK = "https://t.me/+S4g2N_7DVRBmY2M1";
         
-        // Ensure all Telegram buttons have the correct link and security attributes
+        // Utility: Ensure fbq exists with robust fallback
+        function getFbq() {
+            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                return fbq;
+            }
+            // Silent fallback for development - but we already initialized above
+            window.fbq = window.fbq || function() { console.log('[FBQ Fallback]', arguments); };
+            return window.fbq;
+        }
+        
+        // Advanced tracking for Telegram buttons (Lead + Custom Event + InitiateContact)
+        function trackTelegramClick(event) {
+            // Prevent rapid double tracking
+            if (this._trackingActive) return;
+            this._trackingActive = true;
+            setTimeout(() => { this._trackingActive = false; }, 800);
+            
+            const position = this.getAttribute('data-position') || (this.getAttribute('data-track') === 'join_top' ? 'top' : 'bottom');
+            const buttonLocation = this.getAttribute('data-track') || 'telegram_unknown';
+            
+            try {
+                const fbqFunc = getFbq();
+                if (typeof fbqFunc === 'function') {
+                    // 1) Standard Lead event (most important for conversion campaigns)
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'Telegram_Channel_Join_TRADEFINDER',
+                        content_category: 'Telegram_Invite_Link',
+                        content_type: 'telegram_group_channel',
+                        value: 1.5,
+                        currency: 'INR',
+                        method: 'telegram_click',
+                        button_position: position,
+                        channel_username: 'TRADE_FINDER_IN'
+                    });
+                    
+                    // 2) InitiateContact event for deeper funnel analysis
+                    fbqFunc('track', 'InitiateContact', {
+                        contact_method: 'Telegram_Channel',
+                        content_name: 'TradeFinder_Telegram_Join',
+                        button_location: buttonLocation,
+                        channel_type: 'NIFTY_BANKNIFTY_TRADING'
+                    });
+                    
+                    // 3) Custom Event for granular tracking
+                    fbqFunc('trackCustom', 'TelegramJoinClick_TRADEFINDER', {
+                        button_location: buttonLocation,
+                        position_on_page: position,
+                        channel: 'TRADE_FINDER_IN',
+                        timestamp: new Date().toISOString(),
+                        user_segment: 'trader_enthusiast'
+                    });
+                    
+                    // Update UI status momentarily
+                    const statusDiv = document.getElementById('trackingStatus');
+                    if (statusDiv) {
+                        statusDiv.innerHTML = '✅ Telegram Join Tracked • Lead Event Sent ✅';
+                        setTimeout(() => {
+                            if (statusDiv.innerHTML.includes('Lead Event Sent'))
+                                statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
+                        }, 3000);
+                    }
+                    console.log(`✅ [Pixel] Telegram join tracked from ${buttonLocation} (Lead + InitiateContact + Custom)`);
+                }
+            } catch(e) {
+                console.error('Pixel tracking error (Telegram):', e);
+            }
+            // Allow navigation to Telegram - do not prevent default
+            return true;
+        }
+        
+        // Comprehensive Subscribe Tracking: Subscribe + Lead + Custom & visual feedback
+        function handleSubscribeClick(event) {
+            event.preventDefault();
+            
+            // Disable button temporarily to prevent multiple triggers
+            const subBtn = document.getElementById('subscribeButton');
+            if (subBtn && subBtn.disabled) return;
+            
+            // 1) TRACK MULTIPLE PIXEL EVENTS FOR SUBSCRIBE
+            try {
+                const fbqFunc = getFbq();
+                if (typeof fbqFunc === 'function') {
+                    // Primary Standard Event: Subscribe (Core for retargeting & lookalike)
+                    fbqFunc('track', 'Subscribe', {
+                        content_name: 'TRADE_FINDER_IN_Market_Updates',
+                        content_category: 'NIFTY_BANKNIFTY_Options_Subscription',
+                        predicted_ltv: 2.5,
+                        currency: 'INR',
+                        value: 0,
+                        status: 'subscribed',
+                        subscription_type: 'daily_free_calls',
+                        accuracy_rate: '80-90%'
+                    });
+                    
+                    // Lead event as secondary (captures high-intent users)
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'TradeFinder_Update_Subscription',
+                        content_category: 'Stock_Market_Lead',
+                        value: 1,
+                        currency: 'INR',
+                        method: 'subscribe_button_click',
+                        lead_type: 'market_updates'
+                    });
+                    
+                    // Custom event for specific action segmentation
+                    fbqFunc('trackCustom', 'SubscribeButtonClick_TRADEFINDER', {
+                        button_id: 'subscribeButton',
+                        location: 'bottom_card_main',
+                        user_action: 'click_subscribe_updates',
+                        page_name: 'TRADE_FINDER_IN_LANDING',
+                        offer_type: 'NIFTY_BANKNIFTY_DAILY_CALLS',
+                        timestamp_ms: Date.now()
+                    });
+                    
+                    // Also track Contact event (higher intent)
+                    fbqFunc('track', 'Contact', {
+                        contact_type: 'website_subscription',
+                        content_name: 'TradeFinder_Updates_OptIn'
+                    });
+                    
+                    console.log('✅ [Pixel] Subscribe button tracked: Subscribe + Lead + Custom + Contact events fired');
+                    
+                    // Update tracking status
+                    const statusDiv = document.getElementById('trackingStatus');
+                    if (statusDiv) {
+                        statusDiv.innerHTML = '🎯 SUBSCRIBE CONVERSION TRACKED! (Subscribe + Lead) 🎯';
+                        setTimeout(() => {
+                            if (statusDiv.innerHTML.includes('CONVERSION TRACKED'))
+                                statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
+                        }, 4000);
+                    }
+                } else {
+                    console.warn('fbq not available for subscribe tracking');
+                }
+            } catch(e) {
+                console.error('Subscribe pixel error:', e);
+            }
+            
+            // 2) USER FEEDBACK - Professional notification
+            alert("✅ SUBSCRIPTION CONFIRMED! ✅\n\nThank you for subscribing to 𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡\n\n📊 What you'll receive:\n• Daily NIFTY/BANKNIFTY calls (80-90% accuracy)\n• 3-4 observational calls daily\n• Stock Options insights & market analysis\n• FII/DII data & live updates\n\n🚀 Get ready for profitable trades! Join our Telegram for instant calls.");
+            
+            // 3) Visual feedback on subscribe button (success animation)
+            if (subBtn) {
+                const originalText = subBtn.innerHTML;
+                const originalBg = subBtn.style.background;
+                subBtn.innerHTML = "✅ SUBSCRIBED! THANK YOU ✅";
+                subBtn.style.background = "linear-gradient(100deg, #0a5c2e, #15803d, #22c55e)";
+                subBtn.disabled = true;
+                
+                // Optional: Show that they are subscribed (session storage flag)
+                sessionStorage.setItem('tradefinder_subscribed', 'true');
+                
+                setTimeout(() => {
+                    subBtn.innerHTML = originalText;
+                    subBtn.style.background = originalBg;
+                    subBtn.disabled = false;
+                }, 4000);
+            }
+            
+            // Also trigger optional redirect or stay on page (we keep user on page)
+            return false;
+        }
+        
+        // Setup Telegram buttons with event listeners (ensure link works & tracking added)
         const allTeleButtons = document.querySelectorAll('.tele-btn');
         allTeleButtons.forEach(btn => {
+            // Ensure correct href
             if (btn.getAttribute('href') !== TELEGRAM_LINK) {
                 btn.setAttribute('href', TELEGRAM_LINK);
             }
             btn.setAttribute('target', '_blank');
             btn.setAttribute('rel', 'noopener noreferrer');
-        });
-        
-        // Meta Pixel safety wrapper
-        function safeFbq() {
-            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
-                return fbq;
-            }
-            // fallback that logs
-            return function() { console.log('⚠️ fbq fallback:', arguments); };
-        }
-        
-        // Track Telegram button clicks (Lead + Custom Event)
-        function trackTelegramClick(event) {
-            // Debounce to avoid multiple rapid triggers
-            if (this._tracked) return;
-            this._tracked = true;
-            setTimeout(() => { this._tracked = false; }, 500);
             
-            try {
-                const fbqFunc = safeFbq();
-                if (typeof fbqFunc === 'function') {
-                    // Standard Lead event for conversion tracking (Facebook ads optimization)
-                    fbqFunc('track', 'Lead', {
-                        content_name: 'Telegram_Channel_Join_TRADEFINDER',
-                        content_category: 'Telegram_Invite',
-                        content_type: 'telegram_group',
-                        value: 1,
-                        currency: 'INR',
-                        method: 'click'
-                    });
-                    // Custom event for detailed analytics
-                    fbqFunc('trackCustom', 'TelegramJoinClick', {
-                        button_location: this.getAttribute('data-track') || 'telegram_unknown',
-                        channel: 'TRADE_FINDER_IN',
-                        timestamp: new Date().toISOString()
-                    });
-                    console.log('✅ Pixel tracked: Telegram Join from', this.getAttribute('data-track'));
-                }
-            } catch(e) {
-                console.error('Pixel tracking error (Telegram):', e);
-            }
-            // Allow navigation
-            return true;
-        }
-        
-        // Handle Subscribe button: track Facebook Pixel events + show confirmation
-        function handleSubscribeClick(event) {
-            // 1) Track using Meta Pixel (Subscribe standard event + custom)
-            try {
-                const fbqFunc = safeFbq();
-                if (typeof fbqFunc === 'function') {
-                    // Standard Subscribe event (great for audience building)
-                    fbqFunc('track', 'Subscribe', {
-                        content_name: 'TRADE_FINDER_IN_Updates',
-                        content_category: 'Market_Insights_Subscription',
-                        predicted_ltv: 0.5,
-                        currency: 'INR',
-                        value: 0,
-                        status: 'subscribed'
-                    });
-                    // Custom event for deeper segmentation
-                    fbqFunc('trackCustom', 'SubscribeButtonClick_TRADEFINDER', {
-                        button_id: 'subscribeButton',
-                        location: 'bottom_card',
-                        user_action: 'click_subscribe',
-                        page_name: 'TRADE_FINDER_IN'
-                    });
-                    console.log('✅ Pixel tracked: Subscribe button clicked (Standard Subscribe + Custom)');
-                } else {
-                    console.warn('fbq not available for subscribe tracking');
-                }
-            } catch(e) {
-                console.error('Subscribe tracking error:', e);
-            }
-            
-            // 2) Provide user feedback with stylish alert
-            alert("✅ THANK YOU FOR SUBSCRIBING! ✅\n\nYou're now subscribed to 𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡's premium stock market updates.\n\n📊 Get daily NIFTY/BANKNIFTY calls, 80-90% accuracy, and exclusive trade setups.\n\n🚀 Stay tuned for market-moving insights!");
-            
-            // 3) Visual feedback on button (temporary change to show success)
-            const subBtn = document.getElementById('subscribeButton');
-            if (subBtn) {
-                const originalText = subBtn.innerHTML;
-                const originalBg = subBtn.style.background;
-                subBtn.innerHTML = "✅ SUBSCRIBED! THANK YOU ✅";
-                subBtn.style.background = "linear-gradient(100deg, #166534, #15803d, #16a34a)";
-                subBtn.disabled = true;
-                setTimeout(() => {
-                    subBtn.innerHTML = originalText;
-                    subBtn.style.background = originalBg;
-                    subBtn.disabled = false;
-                }, 3000);
-            }
-        }
-        
-        // Attach event listeners to both Telegram buttons
-        const telegramBtns = document.querySelectorAll('.tele-btn');
-        telegramBtns.forEach(btn => {
+            // Remove existing listeners to avoid duplicates and attach fresh
             btn.removeEventListener('click', trackTelegramClick);
             btn.addEventListener('click', trackTelegramClick);
         });
         
-        // Attach Subscribe button handler
-        const subscribeBtn = document.getElementById('subscribeButton');
-        if (subscribeBtn) {
-            subscribeBtn.removeEventListener('click', handleSubscribeClick);
-            subscribeBtn.addEventListener('click', handleSubscribeClick);
+        // Subscribe button setup with full pixel integration
+        const subscribeBtnElem = document.getElementById('subscribeButton');
+        if (subscribeBtnElem) {
+            subscribeBtnElem.removeEventListener('click', handleSubscribeClick);
+            subscribeBtnElem.addEventListener('click', handleSubscribeClick);
         }
         
-        // Additional tracking: Enhanced PageView + custom landing event
-        window.addEventListener('load', function() {
-            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
-                fbq('track', 'PageView');
-                // Custom event for landing page engagement
-                fbq('trackCustom', 'TRADEFINDER_LandingPageView', {
-                    trader_name: 'TRADE_FINDER_IN',
-                    offer_type: 'NIFTY_BANKNIFTY_OPTIONS',
-                    accuracy: '80-90%',
-                    daily_calls: '3-4'
+        // Additional tracking: Scroll depth, time on page, session duration (optional advanced)
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeSpent = Math.round((Date.now() - startTime) / 1000);
+            if (timeSpent > 5 && typeof fbq !== 'undefined' && fbq) {
+                fbq('trackCustom', 'TimeOnPage_TRADEFINDER', {
+                    seconds_spent: timeSpent,
+                    page_type: 'landing_telegram_promo'
                 });
-                console.log('✅ PageView & custom landing event tracked for TRADE FINDER.IN');
+            }
+        });
+        
+        // Scroll tracking (25%, 50%, 75% for better engagement analytics)
+        let scrollPercentTracked = {25: false, 50: false, 75: false};
+        window.addEventListener('scroll', function() {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            if (scrolled >= 25 && !scrollPercentTracked[25]) {
+                scrollPercentTracked[25] = true;
+                if (typeof fbq !== 'undefined' && fbq) fbq('trackCustom', 'ScrollDepth_25', {page: 'TRADE_FINDER'});
+            }
+            if (scrolled >= 50 && !scrollPercentTracked[50]) {
+                scrollPercentTracked[50] = true;
+                if (typeof fbq !== 'undefined' && fbq) fbq('trackCustom', 'ScrollDepth_50', {page: 'TRADE_FINDER'});
+            }
+            if (scrolled >= 75 && !scrollPercentTracked[75]) {
+                scrollPercentTracked[75] = true;
+                if (typeof fbq !== 'undefined' && fbq) fbq('trackCustom', 'ScrollDepth_75', {page: 'TRADE_FINDER'});
+            }
+        });
+        
+        // Fire custom "SessionStart" event after page load
+        window.addEventListener('load', function() {
+            // Enhanced PageView retrigger with specific parameters
+            if (typeof fbq !== 'undefined' && fbq) {
+                fbq('track', 'PageView', {
+                    content_name: 'TRADE_FINDER_IN_ELITE',
+                    engagement_type: 'full_landing',
+                    market_focus: 'NIFTY_BANKNIFTY'
+                });
+                
+                fbq('trackCustom', 'TRADEFINDER_SessionStart', {
+                    session_id: Date.now().toString(36) + Math.random().toString(36),
+                    user_bucket: 'options_traders',
+                    channel_accuracy: 'high_80_90',
+                    timestamp_iso: new Date().toISOString()
+                });
+                
+                console.log('✅ Advanced tracking: SessionStart & enhanced PageView fired');
             }
             
-            // Double-check all Telegram links are correct
-            const checkTeleLinks = document.querySelectorAll('.tele-btn');
-            checkTeleLinks.forEach(link => {
-                if (link.getAttribute('href') !== TELEGRAM_LINK) {
-                    console.warn('Fixing telegram link again');
-                    link.setAttribute('href', TELEGRAM_LINK);
-                }
+            // Confirm all Telegram links final
+            document.querySelectorAll('a.tele-btn').forEach(link => {
+                if (link.href !== TELEGRAM_LINK) link.href = TELEGRAM_LINK;
             });
-            console.log('✅ Final verification complete | Telegram link:', TELEGRAM_LINK);
-            console.log('✅ Meta Pixel ID: 25672578502382248 | Ready for tracking');
+            
+            // Show ready status
+            const statusDiv = document.getElementById('trackingStatus');
+            if (statusDiv) {
+                statusDiv.innerHTML = '✅ Tracking Active • Subscribe & Telegram Events Live ✅';
+                setTimeout(() => {
+                    if (statusDiv && statusDiv.innerHTML.includes('Events Live'))
+                        statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
+                }, 3500);
+            }
+            
+            console.log('🚀 TRADE FINDER.IN FINAL CODE | Pixel ID: 2003503590273511 | Subscribe + Telegram events fully instrumented');
         });
         
-        console.log('🚀 𝗧𝗥𝗔𝗗𝗘 𝗙𝗜𝗡𝗗𝗘𝗥.𝗜𝗡 — 2 Telegram buttons + 1 Subscribe button | Pixel active');
-    })();
-</script>
-
-<!-- Fallback: Ensure fbq never undefined and extra security -->
-<script>
-    (function() {
-        if (typeof fbq === 'undefined') {
-            window.fbq = function() {
-                console.warn('Meta Pixel fallback (fbq missing) called with:', arguments);
-            };
-            console.warn('fbq was undefined, fallback installed');
+        // Additional: check for stored subscription flag and update button style if needed (not required but nice)
+        if (sessionStorage.getItem('tradefinder_subscribed') === 'true') {
+            const subBtnLoaded = document.getElementById('subscribeButton');
+            if (subBtnLoaded && !subBtnLoaded.disabled) {
+                // Just visual - but keep as is
+                console.log('User already subscribed in this session');
+            }
         }
         
-        // Ensure all Telegram links have proper security attributes
-        const allTelegramAnchors = document.querySelectorAll('a[href*="t.me"]');
-        allTelegramAnchors.forEach(anchor => {
-            anchor.setAttribute('rel', 'noopener noreferrer');
-            anchor.setAttribute('target', '_blank');
-        });
+        // Ensure fbq global resilience if somehow overwritten
+        if (typeof fbq === 'undefined') {
+            console.warn('Re-initializing fbq safety fallback');
+            window.fbq = function() { console.log('fbq fallback call:', arguments); };
+        }
         
-        // Log elements with data-track attributes for debugging
-        const trackedElements = document.querySelectorAll('[data-track]');
-        console.log(`📊 Found ${trackedElements.length} elements with data-track attributes for analytics.`);
     })();
 </script>
 
+<!-- Additional pixel backup / consistency check -->
+<script>
+    (function finalSafety() {
+        // Final verification of all tracked buttons
+        const trackedTelegram = document.querySelectorAll('.tele-btn');
+        const trackedSubscribe = document.getElementById('subscribeButton');
+        if (trackedTelegram.length === 2) {
+            console.log('✓ Both Telegram buttons found with tracking hooks');
+        }
+        if (trackedSubscribe) {
+            console.log('✓ Subscribe button ready with full Meta Pixel event stack (Subscribe + Lead + Custom)');
+        }
+        // Ensure Pixel code loaded
+        if (typeof fbq !== 'undefined') {
+            console.log('✓ Meta Pixel is active and listening for events on TRADE FINDER.IN');
+        } else {
+            console.error('⚠️ Pixel not loaded, but page has meta pixel initialization script');
+        }
+    })();
+</script>
 </body>
 </html>
